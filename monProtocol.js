@@ -66,14 +66,8 @@ function dataAddress(cookie) {
         })
 
         .then(async (res) => {
-            try {
-                const data = await res.json();
-                return data;
-            } catch (error) {
-                // If parsing JSON fails, attempt to get response text
-                const text = await res.text();
-                return text;
-            }
+            const data = await res.json()
+            return data;
         });
 
     return index;
@@ -99,14 +93,8 @@ function dataAddressPoint(cookie) {
         })
 
         .then(async (res) => {
-            try {
-                const data = await res.json();
-                return data;
-            } catch (error) {
-                // If parsing JSON fails, attempt to get response text
-                const text = await res.text();
-                return text;
-            }
+            const data = await res.json()
+            return data;
         });
 
     return index;
@@ -132,14 +120,8 @@ function getTask(cookie) {
         })
 
         .then(async (res) => {
-            try {
-                const data = await res.json();
-                return data;
-            } catch (error) {
-                // If parsing JSON fails, attempt to get response text
-                const text = await res.text();
-                return text;
-            }
+            const data = await res.json()
+            return data;
         });
 
     return index;
